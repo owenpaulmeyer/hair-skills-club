@@ -36,6 +36,8 @@ isVowel x =
 	x=='y'||
 	x=='Y'
 
+isV x = elem x "aAeEiIoOuUuY"
+
 num1 = liftM (((filter (subseq "tantan")).(map(map toLower)))) $ getLines "linux.words"
 
 num2 = liftM
